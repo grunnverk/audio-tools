@@ -39,7 +39,7 @@
   "author": "Calen Varek <calenvarek@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "@eldrforge/ai-service": "^0.1.9",
+    "@eldrforge/ai-service": "^0.1.10",
     "@theunwalked/unplayable": "^0.0.21"
   },
   "peerDependencies": {
