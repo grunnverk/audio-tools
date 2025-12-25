@@ -15,7 +15,7 @@ import type { AudioDevice } from './types';
  */
 export async function listAudioDevices(): Promise<AudioDevice[]> {
     const logger = getLogger();
-    
+
     // This would require extending @theunwalked/unplayable or using a different library
     logger.warn('listAudioDevices is not fully implemented - use selectDeviceInteractive instead');
     return [];
