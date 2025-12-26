@@ -1,6 +1,6 @@
 {
   "name": "@eldrforge/audio-tools",
-  "version": "0.1.6-dev.0",
+  "version": "0.1.6",
   "description": "Audio recording tools for voice-driven development workflows",
   "main": "dist/index.js",
   "type": "module",
