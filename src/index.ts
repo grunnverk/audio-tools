@@ -10,7 +10,13 @@ export * from './types';
 export { setLogger, getLogger } from './logger';
 
 // Countdown
-export { countdown } from './countdown';
+export {
+    countdown,
+    CountdownTimer,
+    startCountdown,
+    createAudioRecordingCountdown
+} from './countdown';
+export type { CountdownOptions } from './countdown';
 
 // Device detection and selection
 export {
@@ -26,6 +32,8 @@ export {
     archiveAudio,
     deleteAudio,
     getAudioDuration,
+    getTimestampedArchivedAudioFilename,
+    getTimestampedArchivedTranscriptFilename,
 } from './recording';
 
 // Transcription

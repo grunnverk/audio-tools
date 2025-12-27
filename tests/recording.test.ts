@@ -69,18 +69,21 @@ describe('Recording', () => {
             await fs.writeFile(testAudioPath, 'test audio data');
         });
 
-        it('archives audio to specified directory', async () => {
-            const archivePath = await archiveAudio(testAudioPath, archiveDir, 'test.wav');
+        it('archives audio and transcription to specified directory', async () => {
+            const result = await archiveAudio(testAudioPath, 'Test transcription', archiveDir);
 
-            expect(archivePath).toContain(archiveDir);
-            expect(await fs.access(archivePath).then(() => true).catch(() => false)).toBe(true);
+            expect(result.audioPath).toContain(archiveDir);
+            expect(result.transcriptPath).toContain(archiveDir);
+            expect(await fs.access(result.audioPath).then(() => true).catch(() => false)).toBe(true);
+            expect(await fs.access(result.transcriptPath).then(() => true).catch(() => false)).toBe(true);
         });
 
         it('creates archive directory if needed', async () => {
-            const archivePath = await archiveAudio(testAudioPath, archiveDir);
+            const result = await archiveAudio(testAudioPath, 'Test transcription', archiveDir);
 
             expect(await fs.access(archiveDir).then(() => true).catch(() => false)).toBe(true);
-            expect(await fs.access(archivePath).then(() => true).catch(() => false)).toBe(true);
+            expect(await fs.access(result.audioPath).then(() => true).catch(() => false)).toBe(true);
+            expect(await fs.access(result.transcriptPath).then(() => true).catch(() => false)).toBe(true);
         });
     });
 

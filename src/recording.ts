@@ -61,31 +61,93 @@ export async function recordAudio(
 }
 
 /**
- * Archive audio file to specified directory
+ * Get timestamped filename for archiving
+ */
+function getTimestampedFilename(baseName: string, extension: string = '.json'): string {
+    const now = new Date();
+
+    // Format as YYMMdd-HHmm (e.g., 250701-1030)
+    const yy = now.getFullYear().toString().slice(-2);
+    const mm = (now.getMonth() + 1).toString().padStart(2, '0');
+    const dd = now.getDate().toString().padStart(2, '0');
+    const hh = now.getHours().toString().padStart(2, '0');
+    const min = now.getMinutes().toString().padStart(2, '0');
+
+    const timestamp = `${yy}${mm}${dd}-${hh}${min}`;
+
+    return `${timestamp}-${baseName}${extension}`;
+}
+
+/**
+ * Get timestamped filename for archived audio
+ */
+export function getTimestampedArchivedAudioFilename(originalExtension: string = '.wav'): string {
+    return getTimestampedFilename('review-audio', originalExtension);
+}
+
+/**
+ * Get timestamped filename for archived transcript
+ */
+export function getTimestampedArchivedTranscriptFilename(): string {
+    return getTimestampedFilename('review-transcript', '.md');
+}
+
+/**
+ * Archive audio file with transcription to specified directory
+ * This saves BOTH the audio file AND transcription text together
+ * @param originalAudioPath Path to the original audio file
+ * @param transcriptionText The transcribed text content
+ * @param outputDirectory Directory to save archived files (default: 'output')
+ * @returns Paths to both archived audio and transcript files
  */
 export async function archiveAudio(
-    audioPath: string,
-    archiveDir: string,
-    filename?: string
-): Promise<string> {
+    originalAudioPath: string,
+    transcriptionText: string,
+    outputDirectory: string = 'output'
+): Promise<{ audioPath: string; transcriptPath: string }> {
     const logger = getLogger();
+    const path = await import('path');
 
     try {
-        // Ensure archive directory exists
-        await fs.mkdir(archiveDir, { recursive: true });
+        // Ensure the output directory exists
+        await fs.mkdir(outputDirectory, { recursive: true });
 
-        // Determine archive filename
-        const basename = filename || `audio-${Date.now()}.wav`;
-        const archivePath = join(archiveDir, basename);
+        // Get file extension from original audio file
+        const originalExtension = path.extname(originalAudioPath);
 
-        // Copy file to archive
-        await fs.copyFile(audioPath, archivePath);
+        // Generate timestamped filenames
+        const archivedAudioFilename = getTimestampedArchivedAudioFilename(originalExtension);
+        const archivedTranscriptFilename = getTimestampedArchivedTranscriptFilename();
 
-        logger.info(`Audio archived to: ${archivePath}`);
-        return archivePath;
-    } catch (error) {
-        logger.error('Failed to archive audio:', error);
-        throw new Error(`Archive failed: ${error}`);
+        // Full paths for archived files
+        const archivedAudioPath = path.join(outputDirectory, archivedAudioFilename);
+        const archivedTranscriptPath = path.join(outputDirectory, archivedTranscriptFilename);
+
+        // Copy audio file if it exists
+        try {
+            await fs.access(originalAudioPath);
+            const audioBuffer = await fs.readFile(originalAudioPath);
+            await fs.writeFile(archivedAudioPath, audioBuffer);
+            logger.debug('Archived audio file to: %s', archivedAudioPath);
+        } catch {
+            logger.warn('AUDIO_FILE_NOT_FOUND: Original audio file not accessible | Path: %s | Impact: Cannot archive original', originalAudioPath);
+        }
+
+        // Save transcription text
+        const transcriptContent = `# Audio Transcription Archive\n\n**Original Audio File:** ${originalAudioPath}\n**Archived:** ${new Date().toISOString()}\n\n## Transcription\n\n${transcriptionText}`;
+        await fs.writeFile(archivedTranscriptPath, transcriptContent, 'utf8');
+        logger.debug('Archived transcription to: %s', archivedTranscriptPath);
+
+        logger.info('AUDIO_ARCHIVED: Audio and transcript archived successfully | Audio: %s | Transcript: %s | Status: archived', archivedAudioFilename, archivedTranscriptFilename);
+
+        return {
+            audioPath: archivedAudioPath,
+            transcriptPath: archivedTranscriptPath
+        };
+
+    } catch (error: any) {
+        logger.error('AUDIO_ARCHIVE_FAILED: Failed to archive audio files | Error: %s | Impact: Audio not preserved', error.message);
+        throw new Error(`Audio archiving failed: ${error.message}`);
     }
 }
 
