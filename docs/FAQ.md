@@ -468,7 +468,7 @@ npm run test          # With coverage
 
 ### How do I report bugs?
 
-Open an issue on [GitHub Issues](https://github.com/calenvarek/audio-tools/issues) with:
+Open an issue on [GitHub Issues](https://github.com/grunnverk/audio-tools/issues) with:
 - Clear description
 - Steps to reproduce
 - Expected vs actual behavior
@@ -496,7 +496,7 @@ Not required, but appreciated! You can add to your project's credits:
 
 ```
 Uses @eldrforge/audio-tools
-https://github.com/calenvarek/audio-tools
+https://github.com/grunnverk/audio-tools
 ```
 
 ## Advanced Questions
@@ -591,9 +591,9 @@ pulseaudio --check
 
 ## Still Have Questions?
 
-- 💬 **Ask on Discussions**: [GitHub Discussions](https://github.com/calenvarek/audio-tools/discussions)
-- 🐛 **Report Issues**: [GitHub Issues](https://github.com/calenvarek/audio-tools/issues)
-- 📧 **Email**: calenvarek@gmail.com
+- 💬 **Ask on Discussions**: [GitHub Discussions](https://github.com/grunnverk/audio-tools/discussions)
+- 🐛 **Report Issues**: [GitHub Issues](https://github.com/grunnverk/audio-tools/issues)
+- 📧 **Email**: tobrien@discursive.com
 
 ---
 

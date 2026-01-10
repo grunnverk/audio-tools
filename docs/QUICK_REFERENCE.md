@@ -381,5 +381,5 @@ const filename = getTimestampedArchivedAudioFilename('.mp3');
 
 ---
 
-**Need help?** Open an issue on [GitHub](https://github.com/calenvarek/audio-tools/issues)
+**Need help?** Open an issue on [GitHub](https://github.com/grunnverk/audio-tools/issues)
 

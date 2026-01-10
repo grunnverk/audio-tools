@@ -640,8 +640,8 @@ You can manually edit this file to set default devices.
 ### Dependencies
 
 - **[@theunwalked/unplayable](https://github.com/theunwalked/unplayable)** - Cross-platform audio recording
-- **[@eldrforge/ai-service](https://github.com/calenvarek/ai-service)** - OpenAI Whisper integration
-- **[@eldrforge/shared](https://github.com/calenvarek/shared)** - Optional shared utilities
+- **[@eldrforge/ai-service](https://github.com/grunnverk/ai-service)** - OpenAI Whisper integration
+- **[@eldrforge/shared](https://github.com/grunnverk/shared)** - Optional shared utilities
 - **winston** - Optional structured logging
 
 ### Platform Support
@@ -673,7 +673,7 @@ npm run test -- --watch
 
 ```bash
 # Clone the repository
-git clone https://github.com/calenvarek/audio-tools.git
+git clone https://github.com/grunnverk/audio-tools.git
 cd audio-tools
 
 # Install dependencies
@@ -723,16 +723,16 @@ Apache-2.0 License - see [LICENSE](LICENSE) file for details.
 
 ## 🔗 Related Projects
 
-- **[@eldrforge/ai-service](https://github.com/calenvarek/ai-service)** - AI services including transcription
-- **[@eldrforge/shared](https://github.com/calenvarek/shared)** - Shared utilities
+- **[@eldrforge/ai-service](https://github.com/grunnverk/ai-service)** - AI services including transcription
+- **[@eldrforge/shared](https://github.com/grunnverk/shared)** - Shared utilities
 - **[@theunwalked/unplayable](https://github.com/theunwalked/unplayable)** - Cross-platform audio library
 
 ## 💬 Support
 
 - 🚀 **Getting Started**: [Tutorial Guide](docs/GETTING_STARTED.md)
 - 📖 **Documentation**: [Complete Docs](docs/INDEX.md)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/calenvarek/audio-tools/issues)
-- 💡 **Discussions**: [GitHub Discussions](https://github.com/calenvarek/audio-tools/discussions)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/grunnverk/audio-tools/issues)
+- 💡 **Discussions**: [GitHub Discussions](https://github.com/grunnverk/audio-tools/discussions)
 - ❓ **FAQ**: [Frequently Asked Questions](docs/FAQ.md)
 
 ## 📊 Changelog
@@ -743,7 +743,7 @@ See [RELEASE_NOTES.md](RELEASE_NOTES.md) for version history and changes.
 
 <div align="center">
 
-Made with ❤️ by [Calen Varek](https://github.com/calenvarek)
+Made with ❤️ by [Tim O'Brien](https://github.com/grunnverk)
 
 ⭐ Star this repo if you find it useful!
 

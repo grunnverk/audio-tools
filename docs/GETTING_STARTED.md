@@ -559,8 +559,8 @@ Ideas for projects:
 
 ## Getting Help
 
-- 💬 **Questions**: [GitHub Discussions](https://github.com/calenvarek/audio-tools/discussions)
-- 🐛 **Bugs**: [GitHub Issues](https://github.com/calenvarek/audio-tools/issues)
+- 💬 **Questions**: [GitHub Discussions](https://github.com/grunnverk/audio-tools/discussions)
+- 🐛 **Bugs**: [GitHub Issues](https://github.com/grunnverk/audio-tools/issues)
 - 📖 **Docs**: [Full Documentation](../README.md)
 
 ---

@@ -212,9 +212,9 @@ Contributing or understanding internals:
 ## 📦 Package Resources
 
 - **npm**: [@eldrforge/audio-tools](https://www.npmjs.com/package/@eldrforge/audio-tools)
-- **GitHub**: [calenvarek/audio-tools](https://github.com/calenvarek/audio-tools)
-- **Issues**: [GitHub Issues](https://github.com/calenvarek/audio-tools/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/calenvarek/audio-tools/discussions)
+- **GitHub**: [grunnverk/audio-tools](https://github.com/grunnverk/audio-tools)
+- **Issues**: [GitHub Issues](https://github.com/grunnverk/audio-tools/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/grunnverk/audio-tools/discussions)
 
 ## 💡 Suggested Reading Order
 
@@ -250,10 +250,10 @@ Contributing or understanding internals:
 Can't find what you need?
 
 1. **Check [FAQ.md](./FAQ.md)** - Common questions answered
-2. **Search [Issues](https://github.com/calenvarek/audio-tools/issues)** - Someone may have asked before
-3. **Ask in [Discussions](https://github.com/calenvarek/audio-tools/discussions)** - Community Q&A
+2. **Search [Issues](https://github.com/grunnverk/audio-tools/issues)** - Someone may have asked before
+3. **Ask in [Discussions](https://github.com/grunnverk/audio-tools/discussions)** - Community Q&A
 4. **Open an Issue** - For bugs or feature requests
-5. **Email**: calenvarek@gmail.com - For sensitive topics
+5. **Email**: tobrien@discursive.com - For sensitive topics
 
 ## 📝 Documentation Contributions
 
