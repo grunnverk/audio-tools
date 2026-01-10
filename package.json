@@ -39,7 +39,7 @@
   "author": "Tim O'Brien <tobrien@discursive.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "@eldrforge/ai-service": "^0.1.17",
+    "@eldrforge/ai-service": "^0.1.18",
     "@theunwalked/unplayable": "^0.0.21"
   },
   "peerDependencies": {
@@ -55,7 +55,7 @@
     }
   },
   "devDependencies": {
-    "@eldrforge/shared": "^0.1.6",
+    "@eldrforge/shared": "^0.1.7",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.33.0",
     "@swc/core": "^1.13.3",
