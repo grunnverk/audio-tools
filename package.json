@@ -41,7 +41,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@eldrforge/ai-service": "^0.1.21",
-    "@theunwalked/unplayable": "^0.0.21"
+    "@theunwalked/unplayable": "^0.0.28"
   },
   "peerDependencies": {
     "@eldrforge/shared": "^0.1.10",
