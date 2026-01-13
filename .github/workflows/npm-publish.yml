@@ -22,7 +22,10 @@ jobs:
         with:
           node-version: 22
       - name: Install dependencies
-        run: npm ci --verbose --foreground-scripts
+        # Clean install to ensure platform-specific optional deps (rollup native bindings) are resolved correctly
+        # See: https://github.com/npm/cli/issues/4828
+        run: rm -rf node_modules package-lock.json
+          npm install --include=optional
         timeout-minutes: 10
       - run: npm run lint
       - run: npm run build
@@ -41,7 +44,10 @@ jobs:
       - name: Update npm
         run: npm install -g npm@latest
       - name: Install dependencies
-        run: npm ci --verbose --foreground-scripts
+        # Clean install to ensure platform-specific optional deps (rollup native bindings) are resolved correctly
+        # See: https://github.com/npm/cli/issues/4828
+        run: rm -rf node_modules package-lock.json
+          npm install --include=optional
         timeout-minutes: 10
       - run: npm publish --access public
 
