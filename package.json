@@ -40,7 +40,7 @@
   "author": "Tim O'Brien <tobrien@discursive.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "@eldrforge/ai-service": "^0.1.22",
+    "@eldrforge/ai-service": "^1.0.0",
     "@theunwalked/unplayable": "^0.0.28"
   },
   "peerDependencies": {
