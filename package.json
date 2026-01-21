@@ -1,6 +1,6 @@
 {
   "name": "@eldrforge/audio-tools",
-  "version": "0.1.15",
+  "version": "1.0.0",
   "description": "Audio recording tools for voice-driven development workflows",
   "main": "dist/index.js",
   "type": "module",
@@ -40,8 +40,8 @@
   "author": "Tim O'Brien <tobrien@discursive.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "@eldrforge/ai-service": "^0.1.21",
-    "@theunwalked/unplayable": "^0.0.21"
+    "@eldrforge/ai-service": "^1.0.0",
+    "@theunwalked/unplayable": "^0.0.28"
   },
   "peerDependencies": {
     "@eldrforge/shared": "^0.1.10",
@@ -65,7 +65,7 @@
     "@typescript-eslint/eslint-plugin": "^8.39.1",
     "@typescript-eslint/parser": "^8.47.0",
     "@vitest/coverage-v8": "^4.0.13",
-    "esbuild": "0.27.0",
+    "esbuild": "0.27.2",
     "eslint": "^9.33.0",
     "eslint-plugin-import": "^2.32.0",
     "globals": "^16.3.0",
