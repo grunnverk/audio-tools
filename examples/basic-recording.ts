@@ -2,12 +2,12 @@
  * Basic Audio Recording Example
  *
  * This example demonstrates the simplest way to record audio
- * using @eldrforge/audio-tools
+ * using @grunnverk/audio-tools
  */
 
 /* eslint-disable no-console */
 
-import { recordAudio, setLogger } from '@eldrforge/audio-tools';
+import { recordAudio, setLogger } from '@grunnverk/audio-tools';
 import { createLogger, format, transports } from 'winston';
 
 // Optional: Configure logging
