@@ -216,7 +216,7 @@ export async function recordAudio(options?: RecordingOptions): Promise<Recording
 ## Next Steps
 
 ### Immediate (Ready Now)
-1. ✅ Publish `@eldrforge/audio-tools` to npm
+1. ✅ Publish `@grunnverk/audio-tools` to npm
 2. ✅ Promote for use in new projects
 3. ✅ Document in main README
 

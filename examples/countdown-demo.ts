@@ -11,7 +11,7 @@ import {
     CountdownTimer,
     startCountdown,
     createAudioRecordingCountdown
-} from '@eldrforge/audio-tools';
+} from '@grunnverk/audio-tools';
 
 async function demoBasicCountdown() {
     console.log('Demo 1: Basic Countdown\n');

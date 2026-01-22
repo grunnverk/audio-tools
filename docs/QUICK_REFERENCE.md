@@ -1,11 +1,11 @@
 # Quick Reference Guide
 
-One-page reference for common tasks with `@eldrforge/audio-tools`.
+One-page reference for common tasks with `@grunnverk/audio-tools`.
 
 ## Installation
 
 ```bash
-npm install @eldrforge/audio-tools winston
+npm install @grunnverk/audio-tools winston
 ```
 
 ## Imports
@@ -33,7 +33,7 @@ import {
   // Logging
   setLogger,
   getLogger
-} from '@eldrforge/audio-tools';
+} from '@grunnverk/audio-tools';
 ```
 
 ## Common Tasks
@@ -126,7 +126,7 @@ await timer.start();
 ### Configure Logging
 
 ```javascript
-import { setLogger } from '@eldrforge/audio-tools';
+import { setLogger } from '@grunnverk/audio-tools';
 import { createLogger, transports } from 'winston';
 
 const logger = createLogger({
@@ -217,7 +217,7 @@ import {
   archiveAudio,
   deleteAudio,
   setLogger
-} from '@eldrforge/audio-tools';
+} from '@grunnverk/audio-tools';
 import { createLogger, format, transports } from 'winston';
 import { config } from 'dotenv';
 
@@ -280,7 +280,7 @@ node record.js
 ```
 
 ```javascript
-import { recordAudio } from '@eldrforge/audio-tools';
+import { recordAudio } from '@grunnverk/audio-tools';
 const result = await recordAudio({ duration: 60 });
 console.log('Saved:', result.filePath);
 ```
@@ -292,7 +292,7 @@ node transcribe.js audio.wav
 ```
 
 ```javascript
-import { transcribeAudio } from '@eldrforge/audio-tools';
+import { transcribeAudio } from '@grunnverk/audio-tools';
 const transcript = await transcribeAudio(process.argv[2]);
 console.log(transcript);
 ```
@@ -335,7 +335,7 @@ const result = await recordAudio({
 ### Custom Timestamp Format
 
 ```javascript
-import { getTimestampedArchivedAudioFilename } from '@eldrforge/audio-tools';
+import { getTimestampedArchivedAudioFilename } from '@grunnverk/audio-tools';
 
 const filename = getTimestampedArchivedAudioFilename('.mp3');
 // Returns: "250701-1430-review-audio.mp3"

@@ -13,7 +13,7 @@ import {
     selectDeviceInteractive,
     recordAudio,
     setLogger
-} from '@eldrforge/audio-tools';
+} from '@grunnverk/audio-tools';
 import { createLogger, format, transports } from 'winston';
 
 // Configure logging

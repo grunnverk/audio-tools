@@ -13,7 +13,7 @@ import {
     archiveAudio,
     deleteAudio,
     setLogger
-} from '@eldrforge/audio-tools';
+} from '@grunnverk/audio-tools';
 import { createLogger, format, transports } from 'winston';
 import { config } from 'dotenv';
 

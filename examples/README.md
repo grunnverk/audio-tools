@@ -1,6 +1,6 @@
 # Audio Tools Examples
 
-This directory contains practical examples demonstrating how to use `@eldrforge/audio-tools`.
+This directory contains practical examples demonstrating how to use `@grunnverk/audio-tools`.
 
 ## Setup
 

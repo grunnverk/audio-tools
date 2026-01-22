@@ -5,7 +5,7 @@
 import { processAudio } from '@theunwalked/unplayable';
 import { promises as fs } from 'fs';
 import { join } from 'path';
-import { getLogger } from '@eldrforge/shared';
+import { getLogger } from '@grunnverk/shared';
 import type { RecordingOptions, RecordingResult } from './types';
 
 /**

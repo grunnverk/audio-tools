@@ -2,9 +2,9 @@
 
 ## General Questions
 
-### What is @eldrforge/audio-tools?
+### What is @grunnverk/audio-tools?
 
-`@eldrforge/audio-tools` is a TypeScript library for recording, transcribing, and managing audio in Node.js applications. It's designed for developers who want to add voice-driven features to their applications.
+`@grunnverk/audio-tools` is a TypeScript library for recording, transcribing, and managing audio in Node.js applications. It's designed for developers who want to add voice-driven features to their applications.
 
 ### What platforms are supported?
 
@@ -46,7 +46,7 @@ Absolutely! The library works perfectly with plain JavaScript:
 
 ```javascript
 // Works fine without TypeScript
-import { recordAudio } from '@eldrforge/audio-tools';
+import { recordAudio } from '@grunnverk/audio-tools';
 
 const result = await recordAudio({ duration: 60 });
 console.log('Recorded:', result.filePath);
@@ -71,7 +71,7 @@ in your `package.json`.
 Use the interactive device selector:
 
 ```javascript
-import { selectDeviceInteractive, recordAudio } from '@eldrforge/audio-tools';
+import { selectDeviceInteractive, recordAudio } from '@grunnverk/audio-tools';
 
 const device = await selectDeviceInteractive();
 const result = await recordAudio();
@@ -151,7 +151,7 @@ Typically 10-30 seconds for a 1-minute recording, depending on:
 Yes!
 
 ```javascript
-import { transcribeAudio } from '@eldrforge/audio-tools';
+import { transcribeAudio } from '@grunnverk/audio-tools';
 
 const transcript = await transcribeAudio('./my-audio.mp3');
 ```
@@ -198,7 +198,7 @@ Your terminal might not support ANSI escape codes. The library falls back to pla
 Yes, use the `CountdownTimer` class:
 
 ```javascript
-import { CountdownTimer } from '@eldrforge/audio-tools';
+import { CountdownTimer } from '@grunnverk/audio-tools';
 
 const timer = new CountdownTimer({
   durationSeconds: 30,
@@ -239,7 +239,7 @@ The underlying library (`@theunwalked/unplayable`) doesn't expose a direct devic
 Save the device ID:
 
 ```javascript
-import { selectDeviceInteractive } from '@eldrforge/audio-tools';
+import { selectDeviceInteractive } from '@grunnverk/audio-tools';
 import { writeFile, readFile } from 'fs/promises';
 
 // First time
@@ -292,7 +292,7 @@ Common errors:
 ### How do I enable debug logging?
 
 ```javascript
-import { setLogger } from '@eldrforge/audio-tools';
+import { setLogger } from '@grunnverk/audio-tools';
 import { createLogger, transports } from 'winston';
 
 setLogger(createLogger({
@@ -386,7 +386,7 @@ Yes! Audio-tools works in Electron's main process:
 
 ```javascript
 // main.js
-import { recordAudio } from '@eldrforge/audio-tools';
+import { recordAudio } from '@grunnverk/audio-tools';
 
 ipcMain.handle('record-audio', async () => {
   const result = await recordAudio({ duration: 60 });
@@ -407,7 +407,7 @@ Absolutely! Create API endpoints:
 
 ```javascript
 import express from 'express';
-import { recordAudio, transcribeAudio } from '@eldrforge/audio-tools';
+import { recordAudio, transcribeAudio } from '@grunnverk/audio-tools';
 
 const app = express();
 
@@ -495,7 +495,7 @@ Yes! Apache-2.0 allows use in proprietary software.
 Not required, but appreciated! You can add to your project's credits:
 
 ```
-Uses @eldrforge/audio-tools
+Uses @grunnverk/audio-tools
 https://github.com/grunnverk/audio-tools
 ```
 
@@ -506,7 +506,7 @@ https://github.com/grunnverk/audio-tools
 Not directly, but you can:
 
 ```javascript
-import { recordAudio } from '@eldrforge/audio-tools';
+import { recordAudio } from '@grunnverk/audio-tools';
 
 // Record with audio-tools
 const recording = await recordAudio({ duration: 60 });
@@ -533,7 +533,7 @@ Use external tools:
 
 ```javascript
 import ffmpeg from 'fluent-ffmpeg';
-import { recordAudio } from '@eldrforge/audio-tools';
+import { recordAudio } from '@grunnverk/audio-tools';
 
 const recording = await recordAudio({ format: 'wav' });
 

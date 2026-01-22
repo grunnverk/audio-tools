@@ -7,7 +7,7 @@
 
 /* eslint-disable no-console */
 
-import { recordAudio, setLogger } from '@eldrforge/audio-tools';
+import { recordAudio, setLogger } from '@grunnverk/audio-tools';
 import { createLogger, format, transports } from 'winston';
 import { mkdir } from 'fs/promises';
 import { join } from 'path';

@@ -1,11 +1,11 @@
-# @eldrforge/audio-tools
+# @grunnverk/audio-tools
 
 <div align="center">
 
 **Professional Audio Recording & Transcription Toolkit for Node.js**
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![npm version](https://img.shields.io/npm/v/@eldrforge/audio-tools.svg)](https://www.npmjs.com/package/@eldrforge/audio-tools)
+[![npm version](https://img.shields.io/npm/v/@grunnverk/audio-tools.svg)](https://www.npmjs.com/package/@grunnverk/audio-tools)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue)](https://www.typescriptlang.org/)
 
 *Voice-driven development workflows made simple*
@@ -18,7 +18,7 @@
 
 ## 🎯 Overview
 
-`@eldrforge/audio-tools` is a comprehensive TypeScript library for recording, transcribing, and managing audio in Node.js applications. Built for developers who want to integrate voice-driven workflows, voice notes, audio documentation, or AI-powered transcription into their projects.
+`@grunnverk/audio-tools` is a comprehensive TypeScript library for recording, transcribing, and managing audio in Node.js applications. Built for developers who want to integrate voice-driven workflows, voice notes, audio documentation, or AI-powered transcription into their projects.
 
 ### Key Highlights
 
@@ -59,7 +59,7 @@
 ## 📦 Installation
 
 ```bash
-npm install @eldrforge/audio-tools
+npm install @grunnverk/audio-tools
 ```
 
 ### Peer Dependencies
@@ -71,7 +71,7 @@ The library has optional peer dependencies for enhanced functionality:
 npm install winston
 
 # For shared utilities (optional)
-npm install @eldrforge/shared
+npm install @grunnverk/shared
 ```
 
 ### System Requirements
@@ -85,7 +85,7 @@ npm install @eldrforge/shared
 ### Basic Recording
 
 ```typescript
-import { recordAudio } from '@eldrforge/audio-tools';
+import { recordAudio } from '@grunnverk/audio-tools';
 
 // Record up to 60 seconds of audio
 const result = await recordAudio({
@@ -101,7 +101,7 @@ console.log('File size:', result.fileSize, 'bytes');
 ### Record and Transcribe
 
 ```typescript
-import { recordAudio, transcribeAudio, archiveAudio } from '@eldrforge/audio-tools';
+import { recordAudio, transcribeAudio, archiveAudio } from '@grunnverk/audio-tools';
 
 // Record audio
 const recording = await recordAudio({ duration: 120 });
@@ -123,7 +123,7 @@ console.log('Archived to:', archive.audioPath);
 ### Interactive Device Selection
 
 ```typescript
-import { selectDeviceInteractive, recordAudio } from '@eldrforge/audio-tools';
+import { selectDeviceInteractive, recordAudio } from '@grunnverk/audio-tools';
 
 // Let user select audio device interactively
 const device = await selectDeviceInteractive();
@@ -135,7 +135,7 @@ const result = await recordAudio({ duration: 60 });
 ### Countdown Timer
 
 ```typescript
-import { CountdownTimer } from '@eldrforge/audio-tools';
+import { CountdownTimer } from '@grunnverk/audio-tools';
 
 const timer = new CountdownTimer({
   durationSeconds: 30,
@@ -470,7 +470,7 @@ Set a custom Winston logger instance.
 
 **Example:**
 ```typescript
-import { setLogger } from '@eldrforge/audio-tools';
+import { setLogger } from '@grunnverk/audio-tools';
 import { createLogger, format, transports } from 'winston';
 
 const logger = createLogger({
@@ -497,7 +497,7 @@ Get the current logger instance.
 
 **Example:**
 ```typescript
-import { getLogger } from '@eldrforge/audio-tools';
+import { getLogger } from '@grunnverk/audio-tools';
 
 const logger = getLogger();
 logger.info('Starting recording...');
@@ -517,7 +517,7 @@ import {
   deleteAudio,
   CountdownTimer,
   setLogger
-} from '@eldrforge/audio-tools';
+} from '@grunnverk/audio-tools';
 import { createLogger, format, transports } from 'winston';
 import { config } from 'dotenv';
 
@@ -640,8 +640,8 @@ You can manually edit this file to set default devices.
 ### Dependencies
 
 - **[@theunwalked/unplayable](https://github.com/theunwalked/unplayable)** - Cross-platform audio recording
-- **[@eldrforge/ai-service](https://github.com/grunnverk/ai-service)** - OpenAI Whisper integration
-- **[@eldrforge/shared](https://github.com/grunnverk/shared)** - Optional shared utilities
+- **[@grunnverk/ai-service](https://github.com/grunnverk/ai-service)** - OpenAI Whisper integration
+- **[@grunnverk/shared](https://github.com/grunnverk/shared)** - Optional shared utilities
 - **winston** - Optional structured logging
 
 ### Platform Support
@@ -723,8 +723,8 @@ Apache-2.0 License - see [LICENSE](LICENSE) file for details.
 
 ## 🔗 Related Projects
 
-- **[@eldrforge/ai-service](https://github.com/grunnverk/ai-service)** - AI services including transcription
-- **[@eldrforge/shared](https://github.com/grunnverk/shared)** - Shared utilities
+- **[@grunnverk/ai-service](https://github.com/grunnverk/ai-service)** - AI services including transcription
+- **[@grunnverk/shared](https://github.com/grunnverk/shared)** - Shared utilities
 - **[@theunwalked/unplayable](https://github.com/theunwalked/unplayable)** - Cross-platform audio library
 
 ## 💬 Support

@@ -2,7 +2,7 @@
 
 ## Overview
 
-`@eldrforge/audio-tools` is designed as a modular, platform-agnostic audio recording and transcription toolkit for Node.js. This document explains the architectural decisions and design patterns used in the library.
+`@grunnverk/audio-tools` is designed as a modular, platform-agnostic audio recording and transcription toolkit for Node.js. This document explains the architectural decisions and design patterns used in the library.
 
 ## System Architecture
 
@@ -13,7 +13,7 @@
                           │
                           ▼
 ┌─────────────────────────────────────────────────────────────┐
-│              @eldrforge/audio-tools (Public API)            │
+│              @grunnverk/audio-tools (Public API)            │
 ├─────────────────────────────────────────────────────────────┤
 │  Recording  │  Devices   │  Countdown  │  Transcription    │
 │  Module     │  Module    │  Module     │  Module           │
@@ -21,7 +21,7 @@
        │             │            │              │
        ▼             ▼            │              ▼
 ┌──────────────┐ ┌────────────┐  │    ┌──────────────────┐
-│ @theunwalked │ │ @theunwalked│  │    │ @eldrforge/      │
+│ @theunwalked │ │ @theunwalked│  │    │ @grunnverk/      │
 │ /unplayable  │ │ /unplayable │  │    │ ai-service       │
 │ (Recording)  │ │ (Devices)   │  │    │ (Whisper API)    │
 └──────────────┘ └────────────┘  │    └──────────────────┘
@@ -52,7 +52,7 @@
 
 **Dependencies:**
 - `@theunwalked/unplayable` - Platform-specific audio capture
-- `@eldrforge/shared` - Logging utilities
+- `@grunnverk/shared` - Logging utilities
 
 **Design Patterns:**
 - **Facade Pattern**: Simplifies interaction with `unplayable`
@@ -135,7 +135,7 @@
 - `transcribeAudio()` - Wrapper around AI service
 
 **Dependencies:**
-- `@eldrforge/ai-service` - OpenAI Whisper integration
+- `@grunnverk/ai-service` - OpenAI Whisper integration
 
 **Design Patterns:**
 - **Wrapper/Facade**: Simplifies AI service API
@@ -456,12 +456,12 @@ interface TranscriptionService {
 ### Direct Dependencies
 
 - `@theunwalked/unplayable` - Core audio functionality
-- `@eldrforge/ai-service` - Transcription
+- `@grunnverk/ai-service` - Transcription
 
 ### Peer Dependencies
 
 - `winston` - Optional logging
-- `@eldrforge/shared` - Optional utilities
+- `@grunnverk/shared` - Optional utilities
 
 ### Version Strategy
 
@@ -496,7 +496,7 @@ JavaScript + Declarations (dist/)
 
 ## Conclusion
 
-The architecture of `@eldrforge/audio-tools` prioritizes:
+The architecture of `@grunnverk/audio-tools` prioritizes:
 
 1. **Simplicity** - Easy to use, hard to misuse
 2. **Modularity** - Clear separation of concerns

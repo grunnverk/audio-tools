@@ -1,5 +1,5 @@
 /**
- * Test setup for @eldrforge/audio-tools
+ * Test setup for @grunnverk/audio-tools
  */
 
 import { afterEach } from 'vitest';

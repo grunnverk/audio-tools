@@ -1,8 +1,8 @@
 import { describe, it, expect, vi } from 'vitest';
 import { transcribeAudio } from '../src/transcription';
 
-// Mock @eldrforge/ai-service
-vi.mock('@eldrforge/ai-service', () => {
+// Mock @grunnverk/ai-service
+vi.mock('@grunnverk/ai-service', () => {
     return {
         transcribeAudio: vi.fn().mockResolvedValue({ text: 'Mock transcription text' }),
     };
@@ -17,7 +17,7 @@ describe('Transcription', () => {
         });
 
         it('throws error on transcription failure', async () => {
-            const { transcribeAudio: aiTranscribe } = await import('@eldrforge/ai-service');
+            const { transcribeAudio: aiTranscribe } = await import('@grunnverk/ai-service');
             vi.mocked(aiTranscribe).mockRejectedValueOnce(new Error('API error'));
 
             await expect(transcribeAudio('/path/to/audio.wav')).rejects.toThrow('Transcription failed');

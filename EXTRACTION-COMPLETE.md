@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-The `@eldrforge/audio-tools` package has been successfully extracted from kodrdriv, creating a reusable audio recording library for voice-driven development workflows.
+The `@grunnverk/audio-tools` package has been successfully extracted from kodrdriv, creating a reusable audio recording library for voice-driven development workflows.
 
 ## What Was Accomplished
 
@@ -47,7 +47,7 @@ The `@eldrforge/audio-tools` package has been successfully extracted from kodrdr
 ## Package Structure
 
 ```
-@eldrforge/audio-tools/
+@grunnverk/audio-tools/
 ├── src/
 │   ├── index.ts              # Public API exports
 │   ├── countdown.ts          # Countdown timer
@@ -74,11 +74,11 @@ The `@eldrforge/audio-tools` package has been successfully extracted from kodrdr
 ## Dependencies
 
 ### Production
-- `@eldrforge/ai-service` ^0.1.6 - AI transcription
+- `@grunnverk/ai-service` ^0.1.6 - AI transcription
 - `@theunwalked/unplayable` ^0.0.21 - Audio recording
 
 ### Peer (Optional)
-- `@eldrforge/shared` ^0.1.0 - Utilities
+- `@grunnverk/shared` ^0.1.0 - Utilities
 - `winston` ^3.17.0 - Logging
 
 ## API Surface
@@ -159,13 +159,13 @@ All files         |   84.41 |    57.14 |   72.22 |   84.00
 
 2. **Use in new projects**:
    ```bash
-   npm install @eldrforge/audio-tools
+   npm install @grunnverk/audio-tools
    ```
 
 3. **Link for local development**:
    ```bash
    cd audio-tools && npm link
-   cd ../other-project && npm link @eldrforge/audio-tools
+   cd ../other-project && npm link @grunnverk/audio-tools
    ```
 
 ### Future Enhancements (Optional)

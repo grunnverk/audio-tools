@@ -1,6 +1,6 @@
-# Getting Started with @eldrforge/audio-tools
+# Getting Started with @grunnverk/audio-tools
 
-This guide will walk you through your first audio recording and transcription using `@eldrforge/audio-tools`.
+This guide will walk you through your first audio recording and transcription using `@grunnverk/audio-tools`.
 
 ## Table of Contents
 
@@ -49,7 +49,7 @@ npm init -y
 Install audio-tools:
 
 ```bash
-npm install @eldrforge/audio-tools
+npm install @grunnverk/audio-tools
 ```
 
 Install optional dependencies:
@@ -64,7 +64,7 @@ npm install dotenv   # For environment variables
 Simply add audio-tools to your project:
 
 ```bash
-npm install @eldrforge/audio-tools
+npm install @grunnverk/audio-tools
 ```
 
 ### TypeScript Setup (Optional)
@@ -105,7 +105,7 @@ Let's create a simple script to record audio.
 ### Create `record.js`
 
 ```javascript
-import { recordAudio } from '@eldrforge/audio-tools';
+import { recordAudio } from '@grunnverk/audio-tools';
 
 async function main() {
   console.log('🎙️  Starting recording...');
@@ -175,7 +175,7 @@ echo ".env" >> .gitignore
 ### Create `transcribe.js`
 
 ```javascript
-import { recordAudio, transcribeAudio } from '@eldrforge/audio-tools';
+import { recordAudio, transcribeAudio } from '@grunnverk/audio-tools';
 import { config } from 'dotenv';
 
 // Load environment variables
@@ -236,7 +236,7 @@ import {
   listAudioDevices,
   getDefaultDevice,
   selectDeviceInteractive
-} from '@eldrforge/audio-tools';
+} from '@grunnverk/audio-tools';
 
 async function main() {
   console.log('🎤 Audio Devices\n');
@@ -283,7 +283,7 @@ Add visual countdown timers to your recordings:
 import {
   CountdownTimer,
   recordAudio
-} from '@eldrforge/audio-tools';
+} from '@grunnverk/audio-tools';
 
 async function main() {
   console.log('🎬 Recording with Countdown\n');
@@ -337,7 +337,7 @@ import {
   transcribeAudio,
   archiveAudio,
   deleteAudio
-} from '@eldrforge/audio-tools';
+} from '@grunnverk/audio-tools';
 import { config } from 'dotenv';
 
 config();
@@ -407,7 +407,7 @@ Always handle errors gracefully:
 ### Best Practices
 
 ```javascript
-import { recordAudio } from '@eldrforge/audio-tools';
+import { recordAudio } from '@grunnverk/audio-tools';
 
 async function robustRecording() {
   try {
@@ -451,7 +451,7 @@ async function robustRecording() {
 Check out the `examples/` directory for more:
 
 ```bash
-cd node_modules/@eldrforge/audio-tools/examples
+cd node_modules/@grunnverk/audio-tools/examples
 npm install
 npm run basic          # Basic recording
 npm run transcribe     # Full workflow
@@ -463,7 +463,7 @@ npm run countdown      # Timer demos
 Configure Winston logger for better debugging:
 
 ```javascript
-import { setLogger } from '@eldrforge/audio-tools';
+import { setLogger } from '@grunnverk/audio-tools';
 import { createLogger, format, transports } from 'winston';
 
 const logger = createLogger({
@@ -524,7 +524,7 @@ Ideas for projects:
 
 3. **Enable debug logging**:
    ```javascript
-   import { setLogger } from '@eldrforge/audio-tools';
+   import { setLogger } from '@grunnverk/audio-tools';
    import winston from 'winston';
 
    setLogger(winston.createLogger({
@@ -565,7 +565,7 @@ Ideas for projects:
 
 ---
 
-**Congratulations!** 🎉 You're now ready to build voice-powered applications with `@eldrforge/audio-tools`.
+**Congratulations!** 🎉 You're now ready to build voice-powered applications with `@grunnverk/audio-tools`.
 
 Happy coding! 🚀
 

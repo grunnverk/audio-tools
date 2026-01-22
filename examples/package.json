@@ -1,7 +1,7 @@
 {
-  "name": "@eldrforge/audio-tools-examples",
+  "name": "@grunnverk/audio-tools-examples",
   "version": "1.0.0",
-  "description": "Examples for @eldrforge/audio-tools",
+  "description": "Examples for @grunnverk/audio-tools",
   "type": "module",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
     "custom-path": "tsx custom-output-path.ts"
   },
   "dependencies": {
-    "@eldrforge/audio-tools": "file:..",
+    "@grunnverk/audio-tools": "file:..",
     "dotenv": "^16.4.5",
     "winston": "^3.17.0"
   },

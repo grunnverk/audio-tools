@@ -1,14 +1,14 @@
 /**
  * Audio transcription utilities
- * Wraps @eldrforge/ai-service for convenience
+ * Wraps @grunnverk/ai-service for convenience
  */
 
-import { transcribeAudio as aiTranscribe } from '@eldrforge/ai-service';
-import { getLogger } from '@eldrforge/shared';
+import { transcribeAudio as aiTranscribe } from '@grunnverk/ai-service';
+import { getLogger } from '@grunnverk/shared';
 
 /**
  * Transcribe audio file using AI service
- * This is a convenience wrapper around @eldrforge/ai-service
+ * This is a convenience wrapper around @grunnverk/ai-service
  */
 export async function transcribeAudio(audioPath: string): Promise<string> {
     const logger = getLogger();
