@@ -1,5 +1,5 @@
 /**
- * @eldrforge/audio-tools
+ * @grunnverk/audio-tools
  * Audio recording tools for voice-driven development workflows
  */
 
@@ -7,7 +7,7 @@
 export * from './types';
 
 // Logger - re-export from shared
-export { setLogger, getLogger, type Logger } from '@eldrforge/shared';
+export { setLogger, getLogger, type Logger } from '@grunnverk/shared';
 
 // Countdown
 export {

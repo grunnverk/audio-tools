@@ -39,6 +39,6 @@ export interface RecordingResult {
   fileSize: number;
 }
 
-// Logger interface is now exported from @eldrforge/shared
-// Import it from there: import type { Logger } from '@eldrforge/shared';
+// Logger interface is now exported from @grunnverk/shared
+// Import it from there: import type { Logger } from '@grunnverk/shared';
 

@@ -5,7 +5,7 @@
 import { selectAndConfigureAudioDevice } from '@theunwalked/unplayable';
 import { homedir } from 'os';
 import { join } from 'path';
-import { getLogger } from '@eldrforge/shared';
+import { getLogger } from '@grunnverk/shared';
 import type { AudioDevice } from './types';
 
 /**
