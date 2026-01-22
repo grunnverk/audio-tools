@@ -1,6 +1,6 @@
 # Audio-Tools Documentation Complete ✨
 
-This document summarizes the comprehensive documentation created for `@eldrforge/audio-tools`.
+This document summarizes the comprehensive documentation created for `@grunnverk/audio-tools`.
 
 ## 📦 What Was Created
 
@@ -400,7 +400,7 @@ Users can now:
 
 ## 🎉 Summary
 
-The `@eldrforge/audio-tools` package now has **professional, comprehensive documentation** suitable for a standalone utility library. Users can:
+The `@grunnverk/audio-tools` package now has **professional, comprehensive documentation** suitable for a standalone utility library. Users can:
 
 - Get started in minutes
 - Find answers to common questions

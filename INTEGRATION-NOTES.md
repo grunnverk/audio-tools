@@ -5,7 +5,7 @@
 
 ## Summary
 
-The `@eldrforge/audio-tools` package has been successfully extracted from kodrdriv with the following achievements:
+The `@grunnverk/audio-tools` package has been successfully extracted from kodrdriv with the following achievements:
 
 ### ✅ Completed (Phases 1-3)
 
@@ -31,7 +31,7 @@ audio-tools/src/
 
 The extracted package provides thin wrappers around:
 - `@theunwalked/unplayable` - processAudio, selectAndConfigureAudioDevice
-- `@eldrforge/ai-service` - transcribeAudio
+- `@grunnverk/ai-service` - transcribeAudio
 
 ### Kodrdriv's Current Usage
 
@@ -89,7 +89,7 @@ If proceeding with full integration:
    - Add more sophisticated device management
 
 2. **Update kodrdriv commands**:
-   - Add @eldrforge/audio-tools dependency
+   - Add @grunnverk/audio-tools dependency
    - Refactor audio-commit.ts
    - Refactor audio-review.ts
    - Refactor select-audio.ts
