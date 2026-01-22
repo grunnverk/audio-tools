@@ -1,6 +1,6 @@
 # Documentation Index
 
-Complete documentation for `@eldrforge/audio-tools`.
+Complete documentation for `@grunnverk/audio-tools`.
 
 ## 📚 Documentation Structure
 
@@ -211,7 +211,7 @@ Contributing or understanding internals:
 
 ## 📦 Package Resources
 
-- **npm**: [@eldrforge/audio-tools](https://www.npmjs.com/package/@eldrforge/audio-tools)
+- **npm**: [@grunnverk/audio-tools](https://www.npmjs.com/package/@grunnverk/audio-tools)
 - **GitHub**: [grunnverk/audio-tools](https://github.com/grunnverk/audio-tools)
 - **Issues**: [GitHub Issues](https://github.com/grunnverk/audio-tools/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/grunnverk/audio-tools/discussions)

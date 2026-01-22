@@ -1,6 +1,6 @@
 # CLI Examples
 
-This document shows how to use `@eldrforge/audio-tools` to build command-line tools.
+This document shows how to use `@grunnverk/audio-tools` to build command-line tools.
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ Create `cli-record.js`:
 ```javascript
 #!/usr/bin/env node
 
-import { recordAudio } from '@eldrforge/audio-tools';
+import { recordAudio } from '@grunnverk/audio-tools';
 import { parseArgs } from 'util';
 
 const { values } = parseArgs({
@@ -110,7 +110,7 @@ import {
   transcribeAudio,
   archiveAudio,
   deleteAudio
-} from '@eldrforge/audio-tools';
+} from '@grunnverk/audio-tools';
 import { parseArgs } from 'util';
 import { config } from 'dotenv';
 
@@ -260,7 +260,7 @@ Create `transcribe-cli.js`:
 ```javascript
 #!/usr/bin/env node
 
-import { transcribeAudio } from '@eldrforge/audio-tools';
+import { transcribeAudio } from '@grunnverk/audio-tools';
 import { parseArgs } from 'util';
 import { writeFile } from 'fs/promises';
 import { config } from 'dotenv';
@@ -388,7 +388,7 @@ import {
   listAudioDevices,
   getDefaultDevice,
   selectDeviceInteractive
-} from '@eldrforge/audio-tools';
+} from '@grunnverk/audio-tools';
 import { writeFile } from 'fs/promises';
 
 async function main() {
@@ -447,7 +447,7 @@ Create `batch-transcribe.js`:
 ```javascript
 #!/usr/bin/env node
 
-import { transcribeAudio } from '@eldrforge/audio-tools';
+import { transcribeAudio } from '@grunnverk/audio-tools';
 import { readdir, writeFile, mkdir } from 'fs/promises';
 import { join, basename, extname } from 'path';
 import { parseArgs } from 'util';
@@ -623,7 +623,7 @@ To make any of these scripts globally available:
        "transcribe": "./transcribe-cli.js"
      },
      "dependencies": {
-       "@eldrforge/audio-tools": "^0.1.8"
+       "@grunnverk/audio-tools": "^0.1.8"
      }
    }
    ```

@@ -1,4 +1,4 @@
-# Contributing to @eldrforge/audio-tools
+# Contributing to @grunnverk/audio-tools
 
 Thank you for considering contributing to audio-tools! This document provides guidelines and instructions for contributing.
 
@@ -335,5 +335,5 @@ Contributors are recognized in:
 - Release notes
 - Project README
 
-Thank you for contributing to @eldrforge/audio-tools! 🎉
+Thank you for contributing to @grunnverk/audio-tools! 🎉
 

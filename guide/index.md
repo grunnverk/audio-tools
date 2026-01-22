@@ -1,4 +1,4 @@
-# @eldrforge/audio-tools - Agentic Guide
+# @grunnverk/audio-tools - Agentic Guide
 
 ## Purpose
 
@@ -15,7 +15,7 @@ Audio recording tools for voice-driven development workflows. Enables voice note
 ## Usage
 
 ```typescript
-import { recordAudio, listDevices, transcribe } from '@eldrforge/audio-tools';
+import { recordAudio, listDevices, transcribe } from '@grunnverk/audio-tools';
 
 // List available devices
 const devices = await listDevices();
@@ -33,7 +33,7 @@ const text = await transcribe(audioFile);
 
 ## Dependencies
 
-- @eldrforge/ai-service - Transcription via OpenAI
+- @grunnverk/ai-service - Transcription via OpenAI
 - @theunwalked/unplayable - Audio recording engine
 
 ## Package Structure
