@@ -76,5 +76,8 @@
     "vite-plugin-node": "^7.0.0",
     "vitest": "^4.0.13",
     "winston": "^3.17.0"
+  },
+  "overrides": {
+    "lodash": "^4.17.23"
   }
 }
