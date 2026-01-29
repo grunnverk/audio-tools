@@ -40,7 +40,7 @@
   "author": "Tim O'Brien <tobrien@discursive.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "@grunnverk/ai-service": "^1.5.2",
+    "@grunnverk/ai-service": "^1.5.3",
     "@theunwalked/unplayable": "^0.0.28"
   },
   "peerDependencies": {
