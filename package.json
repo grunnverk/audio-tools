@@ -41,7 +41,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@grunnverk/ai-service": "^1.5.3",
-    "@theunwalked/unplayable": "^0.0.28"
+    "@utilarium/unplayable": "^0.0.29"
   },
   "peerDependencies": {
     "@grunnverk/shared": "^1.5.4",
