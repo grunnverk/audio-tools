@@ -2,7 +2,7 @@
  * Audio device detection and selection
  */
 
-import { selectAndConfigureAudioDevice } from '@theunwalked/unplayable';
+import { selectAndConfigureAudioDevice } from '@utilarium/unplayable';
 import { homedir } from 'os';
 import { join } from 'path';
 import { getLogger } from '@grunnverk/shared';
@@ -10,13 +10,13 @@ import type { AudioDevice } from './types';
 
 /**
  * List all available audio input devices
- * Note: This is a placeholder - @theunwalked/unplayable doesn't provide a direct API for this
+ * Note: This is a placeholder - @utilarium/unplayable doesn't provide a direct API for this
  * In practice, you would use selectAndConfigureAudioDevice for device selection
  */
 export async function listAudioDevices(): Promise<AudioDevice[]> {
     const logger = getLogger();
 
-    // This would require extending @theunwalked/unplayable or using a different library
+    // This would require extending @utilarium/unplayable or using a different library
     logger.warn('listAudioDevices is not fully implemented - use selectDeviceInteractive instead');
     return [];
 }
@@ -43,7 +43,7 @@ export async function findDevice(idOrName: string): Promise<AudioDevice | null> 
 }
 
 /**
- * Interactive device selection using @theunwalked/unplayable
+ * Interactive device selection using @utilarium/unplayable
  * This function uses the built-in interactive device selector
  */
 export async function selectDeviceInteractive(): Promise<string> {

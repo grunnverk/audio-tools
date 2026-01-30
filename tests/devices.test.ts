@@ -1,8 +1,8 @@
 import { describe, it, expect, vi } from 'vitest';
 import { selectDeviceInteractive } from '../src/devices';
 
-// Mock @theunwalked/unplayable
-vi.mock('@theunwalked/unplayable', () => {
+// Mock @utilarium/unplayable
+vi.mock('@utilarium/unplayable', () => {
     return {
         selectAndConfigureAudioDevice: vi.fn().mockResolvedValue('Device configured successfully'),
     };
@@ -17,7 +17,7 @@ describe('Audio Devices', () => {
         });
 
         it('throws error on failure', async () => {
-            const { selectAndConfigureAudioDevice } = await import('@theunwalked/unplayable');
+            const { selectAndConfigureAudioDevice } = await import('@utilarium/unplayable');
             vi.mocked(selectAndConfigureAudioDevice).mockRejectedValueOnce(new Error('No devices found'));
 
             await expect(selectDeviceInteractive()).rejects.toThrow('Device selection failed');

@@ -628,7 +628,7 @@ recordAndTranscribeVoiceNote().catch(error => {
 
 ### Audio Preferences
 
-The library uses `@theunwalked/unplayable` which stores audio device preferences in:
+The library uses `@utilarium/unplayable` which stores audio device preferences in:
 ```
 ~/.unplayable/audio-preferences.json
 ```
@@ -639,7 +639,7 @@ You can manually edit this file to set default devices.
 
 ### Dependencies
 
-- **[@theunwalked/unplayable](https://github.com/theunwalked/unplayable)** - Cross-platform audio recording
+- **[@utilarium/unplayable](https://github.com/utilarium/unplayable)** - Cross-platform audio recording
 - **[@grunnverk/ai-service](https://github.com/grunnverk/ai-service)** - OpenAI Whisper integration
 - **[@grunnverk/shared](https://github.com/grunnverk/shared)** - Optional shared utilities
 - **winston** - Optional structured logging
@@ -725,7 +725,7 @@ Apache-2.0 License - see [LICENSE](LICENSE) file for details.
 
 - **[@grunnverk/ai-service](https://github.com/grunnverk/ai-service)** - AI services including transcription
 - **[@grunnverk/shared](https://github.com/grunnverk/shared)** - Shared utilities
-- **[@theunwalked/unplayable](https://github.com/theunwalked/unplayable)** - Cross-platform audio library
+- **[@utilarium/unplayable](https://github.com/utilarium/unplayable)** - Cross-platform audio library
 
 ## 💬 Support
 

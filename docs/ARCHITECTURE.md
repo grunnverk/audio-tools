@@ -21,7 +21,7 @@
        │             │            │              │
        ▼             ▼            │              ▼
 ┌──────────────┐ ┌────────────┐  │    ┌──────────────────┐
-│ @theunwalked │ │ @theunwalked│  │    │ @grunnverk/      │
+│ @utilarium │ │ @utilarium│  │    │ @grunnverk/      │
 │ /unplayable  │ │ /unplayable │  │    │ ai-service       │
 │ (Recording)  │ │ (Devices)   │  │    │ (Whisper API)    │
 └──────────────┘ └────────────┘  │    └──────────────────┘
@@ -51,7 +51,7 @@
 - `getTimestampedFilename()` - Filename generation
 
 **Dependencies:**
-- `@theunwalked/unplayable` - Platform-specific audio capture
+- `@utilarium/unplayable` - Platform-specific audio capture
 - `@grunnverk/shared` - Logging utilities
 
 **Design Patterns:**
@@ -73,7 +73,7 @@
 - `selectDeviceInteractive()` - Interactive CLI selection
 
 **Dependencies:**
-- `@theunwalked/unplayable` - Platform audio device APIs
+- `@utilarium/unplayable` - Platform audio device APIs
 
 **Design Patterns:**
 - **Strategy Pattern**: Different device selection strategies
@@ -301,7 +301,7 @@ type SampleRate = 16000 | 44100 | 48000;
 ```
 audio-tools API
     ↓
-@theunwalked/unplayable
+@utilarium/unplayable
     ↓
 ┌─────────┬──────────┬──────────┐
 │  macOS  │  Linux   │ Windows  │
@@ -379,7 +379,7 @@ CoreAudio ALSA/PA    WASAPI
 
 ```typescript
 // Mock unplayable
-vi.mock('@theunwalked/unplayable', () => ({
+vi.mock('@utilarium/unplayable', () => ({
   processAudio: vi.fn().mockResolvedValue({
     audioFilePath: '/tmp/test.wav',
     cancelled: false
@@ -455,7 +455,7 @@ interface TranscriptionService {
 
 ### Direct Dependencies
 
-- `@theunwalked/unplayable` - Core audio functionality
+- `@utilarium/unplayable` - Core audio functionality
 - `@grunnverk/ai-service` - Transcription
 
 ### Peer Dependencies

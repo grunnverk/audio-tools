@@ -34,7 +34,7 @@ const text = await transcribe(audioFile);
 ## Dependencies
 
 - @grunnverk/ai-service - Transcription via OpenAI
-- @theunwalked/unplayable - Audio recording engine
+- @utilarium/unplayable - Audio recording engine
 
 ## Package Structure
 

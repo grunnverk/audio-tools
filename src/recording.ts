@@ -2,14 +2,14 @@
  * Audio recording functionality
  */
 
-import { processAudio } from '@theunwalked/unplayable';
+import { processAudio } from '@utilarium/unplayable';
 import { promises as fs } from 'fs';
 import { join } from 'path';
 import { getLogger } from '@grunnverk/shared';
 import type { RecordingOptions, RecordingResult } from './types';
 
 /**
- * Record audio using @theunwalked/unplayable
+ * Record audio using @utilarium/unplayable
  */
 export async function recordAudio(
     options: RecordingOptions = {}

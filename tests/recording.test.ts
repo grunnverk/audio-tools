@@ -2,8 +2,8 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { promises as fs } from 'fs';
 import { recordAudio, archiveAudio, deleteAudio } from '../src/recording';
 
-// Mock @theunwalked/unplayable
-vi.mock('@theunwalked/unplayable', () => {
+// Mock @utilarium/unplayable
+vi.mock('@utilarium/unplayable', () => {
     return {
         processAudio: vi.fn().mockImplementation(async () => {
             const audioPath = '/tmp/test-recording.wav';
@@ -46,7 +46,7 @@ describe('Recording', () => {
         });
 
         it('throws error when recording is cancelled', async () => {
-            const { processAudio } = await import('@theunwalked/unplayable');
+            const { processAudio } = await import('@utilarium/unplayable');
             vi.mocked(processAudio).mockResolvedValueOnce({
                 cancelled: true,
                 audioFilePath: '',
@@ -56,7 +56,7 @@ describe('Recording', () => {
         });
 
         it('throws error on recording failure', async () => {
-            const { processAudio } = await import('@theunwalked/unplayable');
+            const { processAudio } = await import('@utilarium/unplayable');
             vi.mocked(processAudio).mockRejectedValueOnce(new Error('Hardware error'));
 
             await expect(recordAudio()).rejects.toThrow('Recording failed');

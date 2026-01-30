@@ -232,7 +232,7 @@ await Promise.all([
 
 ### Why does `listAudioDevices()` return empty?
 
-The underlying library (`@theunwalked/unplayable`) doesn't expose a direct device listing API. Use `selectDeviceInteractive()` instead, which provides a menu-based selection.
+The underlying library (`@utilarium/unplayable`) doesn't expose a direct device listing API. Use `selectDeviceInteractive()` instead, which provides a menu-based selection.
 
 ### How do I remember the user's device choice?
 
@@ -251,7 +251,7 @@ const savedDevice = await readFile('device-preference.txt', 'utf8');
 // Use savedDevice for recording
 ```
 
-Note: `@theunwalked/unplayable` also saves preferences in `~/.unplayable/audio-preferences.json`.
+Note: `@utilarium/unplayable` also saves preferences in `~/.unplayable/audio-preferences.json`.
 
 ### My Bluetooth headset isn't detected
 
