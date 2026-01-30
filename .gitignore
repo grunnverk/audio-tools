@@ -18,3 +18,4 @@ processed/
 # Git hooks (environment-specific)
 .git/hooks/pre-commit
 
+package-lock.json
