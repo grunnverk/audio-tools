@@ -1,6 +1,6 @@
 {
   "name": "@grunnverk/audio-tools",
-  "version": "1.5.5",
+  "version": "1.5.6",
   "description": "Audio recording tools for voice-driven development workflows",
   "main": "dist/index.js",
   "type": "module",
@@ -40,7 +40,7 @@
   "author": "Tim O'Brien <tobrien@discursive.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "@grunnverk/ai-service": "^1.5.3",
+    "@grunnverk/ai-service": "^1.5.4",
     "@utilarium/unplayable": "^0.0.29"
   },
   "peerDependencies": {
