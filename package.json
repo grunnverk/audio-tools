@@ -1,6 +1,6 @@
 {
   "name": "@grunnverk/audio-tools",
-  "version": "1.5.7",
+  "version": "1.5.8-dev.0",
   "description": "Audio recording tools for voice-driven development workflows",
   "main": "dist/index.js",
   "type": "module",
