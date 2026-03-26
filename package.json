@@ -56,15 +56,16 @@
     }
   },
   "devDependencies": {
-    "@grunnverk/shared": "^1.5.8",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.33.0",
+    "@grunnverk/shared": "^1.5.8",
     "@swc/core": "^1.13.3",
     "@types/node": "^24.10.1",
     "@types/winston": "^2.4.4",
     "@typescript-eslint/eslint-plugin": "^8.39.1",
     "@typescript-eslint/parser": "^8.47.0",
     "@vitest/coverage-v8": "^4.0.13",
+    "ajv": "^8.18.0",
     "esbuild": "0.27.2",
     "eslint": "^9.33.0",
     "eslint-plugin-import": "^2.32.0",
